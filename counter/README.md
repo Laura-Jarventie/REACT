@@ -4,5 +4,5 @@ School exercise for React.js When you press add, it adds one to counter. Remove 
 
 this is how it looks like:
 
-/\*![Screenshot](<screenshot.png)
+![Screenshot](screenshot.png)
 Format: .png ![Screenshot of the page](url)
