@@ -1,17 +1,20 @@
 import "./App.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import Main_router from "./Main_router";
 import Main from "./Main";
+import { BrowserRouter as Router } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
+      <Main_router />
       <Main />
       <Footer />
-    </div>
+    </Router>
   );
-}
+};
 
 export default App;
 //exports function, not component box. could write allready export default funtion App() etc. exports to index.js
