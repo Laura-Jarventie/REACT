@@ -1,15 +1,17 @@
 import React from "react";
 
-const Header = () => {
-  return (
-    <nav>
-      <h1>Counter App</h1>
-      <p id="demo"></p>
-    </nav>
-  );
-};
-
-let d = new Date();
-document.getElementById("demo").innerHTML = d;
+class Header extends React.Component {
+  state = {
+    currentDate: new Date().toDateString(),
+  };
+  render() {
+    return (
+      <div className="Header">
+        <h1>Welcome to my counter app</h1>
+        <p>Today is {this.state.currentDate}</p>
+      </div>
+    );
+  }
+}
 
 export default Header;
