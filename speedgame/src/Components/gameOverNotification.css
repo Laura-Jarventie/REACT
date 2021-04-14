@@ -1,0 +1,11 @@
+.gameOverNotification {
+  height: 30vw;
+  width: 50vw;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: solid black;
+  border-radius: 2%;
+  padding: 1rem;
+}
