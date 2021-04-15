@@ -8,6 +8,8 @@ const Circle = (props) => {
         props.active ? "active" : "notactive"
       }`}
       onClick={props.click}
+      style={{ pointerEvents: props.disabled ? "auto" : "none" }}
+      //double {} because conditional rendering
     >
       <p>{props.id}</p>
     </div>

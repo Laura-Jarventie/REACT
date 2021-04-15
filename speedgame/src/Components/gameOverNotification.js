@@ -1,5 +1,5 @@
 import React from "react";
-import "./gameOverNotification.css";
+import "./GameOverNotification.css";
 
 const closeHandler = () => {
   window.location.reload();
@@ -11,7 +11,7 @@ const gameOverNotification = (props) => {
       <div className="gameover_box">
         <h2>Game over</h2>
         <p>Your score was: {props.score}</p>
-        <button>X</button>
+        <button onClick={closeHandler}>X</button>
       </div>
     </div>
   );

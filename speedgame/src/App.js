@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Circle from "./Components/Circle";
-import gameOverNotification from "./Components/gameOverNotification";
+import GameOverNotification from "./Components/GameOverNotification";
 
 import "./App.css";
 
-import startSound from "./assets/sounds/jne";
-import endSound from "./assets/sounds/jne";
+import startSound from "./assets/sounds/music.mp3";
+import endSound from "./assets/sounds/mistakeSound.mp3";
 
 let gameStartSound = new Audio(startSound);
 let gameEndSound = new Audio(endSound);
@@ -24,6 +24,9 @@ class App extends Component {
       { id: 3, color: "red" },
       { id: 4, color: "orange" },
     ],
+    showGameOverNotification: false,
+    rounds: 0,
+    gameStart: false,
   };
 
   timer = undefined;
@@ -31,20 +34,37 @@ class App extends Component {
 
   clickHandler = (id) => {
     console.log("wow, you cliked " + id);
+
+    if (this.state.current !== id) {
+      this.endHandler();
+      return;
+    }
+
     this.setState({
       score: this.state.score + 10,
+      rounds: 0,
     });
   };
   //setState is ready made method. Has to be before render.
 
   nextCircle = () => {
+    if (this.state.rounds >= 5) {
+      this.endHandler();
+      return;
+    }
+
     let nextActive = undefined;
+
     do {
       nextActive = getRndInteger(1, 4);
     } while (nextActive === this.state.current);
+
     this.setState({
       current: nextActive,
+      rounds: this.state.rounds + 1,
     });
+    console.log(this.state.rounds);
+
     this.pace *= 0.95;
     this.timer = setTimeout(this.nextCircle, this.pace);
     console.log("active circle is", this.state.current);
@@ -53,9 +73,18 @@ class App extends Component {
 
   startHandler = () => {
     this.nextCircle();
+    this.setState({ gameStart: true });
+    gameStartSound.play();
   };
+
   endHandler = () => {
+    gameStartSound.pause();
+    gameEndSound.play();
     clearTimeout(this.timer);
+
+    this.setState({
+      showGameOverNotification: true,
+    });
   };
 
   render() {
@@ -67,18 +96,24 @@ class App extends Component {
           color={c.color}
           click={() => this.clickHandler(c.id)}
           active={this.state.current === c.id}
+          disabled={this.state.gameStart}
         />
       );
     });
     //actually we don´t need cicleslist, we could add it directly to return but it would be very difficult to read
     return (
-      <div>
+      <main>
         <h1>Speedtest</h1>
         <p>Your score is: {this.state.score} </p>
         <div className="circles">{circlesList}</div>
-        <button onClick={this.startHandler}>Start</button>
+        <button onClick={this.startHandler} disabled={this.state.gameStart}>
+          Start
+        </button>
         <button onClick={this.endHandler}>Stop</button>
-      </div>
+        {this.state.showGameOverNotification && (
+          <GameOverNotification score={this.state.score} />
+        )}
+      </main>
     );
   }
 }
