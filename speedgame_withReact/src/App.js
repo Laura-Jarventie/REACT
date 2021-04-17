@@ -103,16 +103,24 @@ class App extends Component {
     //actually we don´t need cicleslist, we could add it directly to return but it would be very difficult to read
     return (
       <main>
-        <h1>Speedtest</h1>
+        <h1>Speedgame</h1>
+        <p>
+          {" "}
+          Can you catch Milli "maanvaiva" Vanilli aka world´s cutest double
+          trouble?{" "}
+        </p>
         <p>Your score is: {this.state.score} </p>
+
         <div className="circles">{circlesList}</div>
-        <button onClick={this.startHandler} disabled={this.state.gameStart}>
-          Start
-        </button>
-        <button onClick={this.endHandler}>Stop</button>
-        {this.state.showGameOverNotification && (
-          <GameOverNotification score={this.state.score} />
-        )}
+        <div className="buttons">
+          <button onClick={this.startHandler} disabled={this.state.gameStart}>
+            Start
+          </button>
+          <button onClick={this.endHandler}>Stop</button>
+          {this.state.showGameOverNotification && (
+            <GameOverNotification score={this.state.score} />
+          )}
+        </div>
       </main>
     );
   }

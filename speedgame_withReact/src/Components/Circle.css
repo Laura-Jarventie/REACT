@@ -10,20 +10,21 @@
 }
 
 .green {
-  background-color: green;
+  background-color: rgb(245, 165, 179);
 }
 .yellow {
-  background-color: yellow;
+  background-color: #c50867;
 }
 .red {
-  background-color: red;
+  background-color: rgb(236, 110, 26);
 }
 .orange {
-  background-color: orange;
+  background-color: rgb(255, 24, 16);
 }
 
 .active {
   background-image: url("../assets/img/Milli.png");
+  background-size: 110%;
   border-radius: 50%;
   height: 100px;
   width: 100px;

@@ -4,6 +4,7 @@ import "./Animal.css";
 import SearchBox from "./SearchBox/SearchBox";
 
 import { animals } from "./animals";
+
 class AnimalsList extends Component {
   state = {
     animals: animals,
