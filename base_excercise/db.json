@@ -39,7 +39,7 @@
         {
             "id" : 3,
             "name": "Vaniljaleivät",
-            "recipeCategory": "Leivonnainen",
+            "recipeCategory": "Keitto",
             "image":"cookie",
             "recipeIngredient": [
                 "200g margariini",

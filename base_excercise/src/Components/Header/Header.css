@@ -1,29 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
 .Logo {
-  display: flex;
-  position: fixed;
-  top: 2vh;
-  left: 2vh;
-  font-family: "Dancing Script", cursive;
   font-size: 1.5rem;
-}
-
-ul {
-  list-style-type: none;
+  display: flex;
+  text-align: center;
+  margin-top: vh;
 }
 
 ul li {
   display: inline-block;
   padding: 0 0.5rem;
+
+  list-style-type: none;
 }
 
-nav {
-  display: flex;
-  position: fixed;
-  top: 1vh;
-  right: 4vh;
+.Nav {
   justify-content: space-between;
   align-items: center;
   font-size: x-large;
+  color: whitesmoke;
+}
+
+.container {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  padding-left: 1vh;
 }

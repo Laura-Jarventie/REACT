@@ -1,29 +1,19 @@
 import React from "react";
 
-const RecepyList = ({ recepies }) => {
+const RecepyList = (props) => {
   return (
-    <div>
-      <h1>Your Recepy:</h1>
-      <div className="receptycard">
+    <div className="receptycard">
+      <ul key={props.id}>
+        <h2>{props.name}</h2>
+        <h4>{props.recipeCategory}</h4>
         <ul>
-          {recepies.map((recipe) => {
-            return (
-              <li key={recipe.id}>
-                <h2>{recipe.name}</h2>
-                {recipe.image}
-                <h4>{recipe.recipeCategory}</h4>
-                <ul>
-                  {recipe.recipeIngredient.map((ingredients) => {
-                    return <p> {ingredients} </p>;
-                  })}
-                </ul>
-                <h4>Valmistus:</h4>
-                {recipe.recipeInstructions}
-              </li>
-            );
+          {props.recipeIngredient.map((ingredients) => {
+            return <p> {ingredients} </p>;
           })}
         </ul>
-      </div>
+        <h4>Valmistus:</h4>
+        {props.recipeInstructions}
+      </ul>
     </div>
   );
 };

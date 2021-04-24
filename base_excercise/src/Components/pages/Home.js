@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <span>
-      <h1>Tervetuloa Järventie-suvun sukuresepti sivulle:</h1>
+      <h1>Tervetuloa selaamaan Järventie-suvun luottoreseptejä:</h1>
 
       <p> Järventeiden suvussa on kulkenut useita reseptejä kädestä </p>
       <p>

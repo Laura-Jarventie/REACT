@@ -5,17 +5,7 @@ body {
 
 .App-Header {
   display: flex;
-  height: 10vh;
-  border: 1px solid rgb(102, 102, 102);
-}
-
-.Main {
-  display: flex;
-  height: 82vh;
-  border: 1px solid rgb(102, 102, 102);
-}
-
-.Footer {
-  display: flex;
-  height: 8vh;
+  height: 15vh;
+  background-color: rgb(180, 182, 182);
+  text-align: center;
 }

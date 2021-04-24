@@ -5,10 +5,14 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <span className="Logo">
-      <h2>Järventie-suvun reseptit</h2>
-      <Nav />
-    </span>
+    <div className="container">
+      <span className="Logo">
+        <h2>Järventie-suvun reseptit</h2>
+      </span>
+      <span className="Nav">
+        <Nav />
+      </span>
+    </div>
   );
 };
 

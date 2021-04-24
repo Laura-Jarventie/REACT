@@ -1,18 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Sacramento&display=swap");
 main {
   text-decoration: none;
-  line-height: 2;
-  padding: 50px;
-  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  padding: 4vh;
+  font-family: "Dancing Script", cursive;
 }
 
 .receptycard {
-  background-color: blanchedalmond;
+  background-color: rgba(245, 245, 245, 0.719);
   border-radius: 5px;
   box-shadow: 0 0 5px #333;
-  padding: 1rem;
+  padding: 2vh;
+  margin-bottom: 3vh;
 }
 
-.receptycard img {
-  width: 200px;
+.searchBox {
+  background-color: rgba(245, 245, 245, 0.719);
+  border-radius: 5px;
+  padding: 0.5vh;
+  display: inline-block;
+  margin-bottom: 2vh;
 }
