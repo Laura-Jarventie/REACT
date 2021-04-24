@@ -1,8 +1,21 @@
-ul {
-  list-style-type: none;
+body {
+  background-color: blanchedalmond;
+  margin: 0 auto;
 }
 
-ul li {
-  display: inline-block;
-  padding: 0 0.5rem;
+.App-Header {
+  display: flex;
+  height: 10vh;
+  border: 1px solid rgb(102, 102, 102);
+}
+
+.Main {
+  display: flex;
+  height: 82vh;
+  border: 1px solid rgb(102, 102, 102);
+}
+
+.Footer {
+  display: flex;
+  height: 8vh;
 }

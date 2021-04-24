@@ -4,6 +4,7 @@
             "id" : 1,
             "name": "Hiivaleipä",
             "recipeCategory": "Leivonnainen",
+            "image":"Hiivaleipä",
             "recipeIngredient": [
                 "30-50 g rasva",
                 "1/2 L maito",
@@ -13,12 +14,13 @@
                 "10dl Pirkka hiivaleipäjauho"
               ],
               "recipeInstructions": 
-            "sulata rasva ja sotke kaikki ainekset  sekaisin niin että taikina irtoaa sormista. Kohota kaksinkertaiseksi. Paista 200C asteessa 30min"
+            "sulata rasva ja sotke kaikki ainekset  sekaisin niin että taikina irtoaa sormista. Kohota kaksinkertaiseksi. Paista 200C asteessa 30min."
         },
         {
             "id" : 2,
             "name": "Britan Kakku",
             "recipeCategory": "Leivonnainen",
+            "image":"cake",
             "recipeIngredient": [
                 "125g margariini",
                 "1dl sokeri",
@@ -32,12 +34,13 @@
                 "hasslepähkinärouhe"
               ],
               "recipeInstructions":
-              "vaahdota margariini ja sokeri. Lisää keltuaiset vatkaten. Lisää maito ja jauhot vuortellen vaahtoon. Marenki: valkuaiset vatkataan kovaksi vaahdoksi. Lisää sokerit. Levitä pohja pellille - marenki päälle.Paista 175C astessaa 15-20min.Tekele halkaistaan, väliin hilloa, 2dl kermavaahtoa ja 3 banaania siivutettuna"
+              "vaahdota margariini ja sokeri. Lisää keltuaiset vatkaten. Lisää maito ja jauhot vuortellen vaahtoon. Marenki: valkuaiset vatkataan kovaksi vaahdoksi. Lisää sokerit. Levitä pohja pellille - marenki päälle.Paista 175C astessaa 15-20min.Tekele halkaistaan, väliin hilloa, 2dl kermavaahtoa ja 3 banaania siivutettuna."
         },
         {
             "id" : 3,
             "name": "Vaniljaleivät",
             "recipeCategory": "Leivonnainen",
+            "image":"cookie",
             "recipeIngredient": [
                 "200g margariini",
                 "200g sokeri",
@@ -46,7 +49,7 @@
                 "2tl leivinjauhe",
                 "3tl vaniljasokeri"
               ],
-              "recipeInstructions": "Vatkaa voi ja sokeri ja lisää munat. Sekoita jauhot keskenään ja sotke edellisten joukkoon. Leivotaan tanko joka levitettään haarukalla, päälle sokeria. Paisto 200C 8min.Paloitellaan kuumana "
+              "recipeInstructions": "Vatkaa voi ja sokeri ja lisää munat. Sekoita jauhot keskenään ja sotke edellisten joukkoon. Leivotaan tanko joka levitettään haarukalla, päälle sokeria. Paisto 200C 8min. Paloitellaan kuumana. "
         }
     ]
 }

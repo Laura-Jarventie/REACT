@@ -1,3 +1,29 @@
-div {
-  /* why this is affecting to whole page?}  display: flex;*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.Logo {
+  display: flex;
+  position: fixed;
+  top: 2vh;
+  left: 2vh;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 1vh;
+  right: 4vh;
+  justify-content: space-between;
+  align-items: center;
+  font-size: x-large;
 }

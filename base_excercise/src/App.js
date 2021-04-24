@@ -9,9 +9,15 @@ import Footer from "./Components/Footer/Footer";
 const App = () => {
   return (
     <Router>
-      <Header />
-      <Main />
-      <Footer />
+      <span className="App-Header">
+        <Header />
+      </span>
+      <span className="Main">
+        <Main />
+      </span>
+      <span className="Footer">
+        <Footer />
+      </span>
     </Router>
   );
 };

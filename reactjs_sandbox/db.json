@@ -1,0 +1,36 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "firstname": "Margit",
+      "lastname": "Tennosaar",
+      "phonenumber": 1234561,
+      "message": "this is my important message",
+      "role": "teacher"
+    },
+    {
+      "id": 2,
+      "firstname": "Laura",
+      "lastname": "Järventie",
+      "phonenumber": 456456546,
+      "message": "this is my second important message",
+      "role": "student"
+    },
+    {
+      "id": 3,
+      "firstname": "Annika",
+      "lastname": "Eronen",
+      "phonenumber": 654321123,
+      "message": "this is my almost important message",
+      "role": "whatever"
+    },
+    {
+      "firstname": "Juuso",
+      "lastname": "Järvi",
+      "number": "123456",
+      "role": "whatever",
+      "message": "kokeillaan",
+      "id": 4
+    }
+  ]
+}

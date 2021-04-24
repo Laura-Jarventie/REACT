@@ -1,3 +1,4 @@
+/*
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -9,7 +10,7 @@ const Nav = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/Recipes">Recipes</Link>
+          <Link to="/Recepies">Recipes</Link>
         </li>
         <li>
           <Link to="/About">About</Link>
@@ -20,3 +21,4 @@ const Nav = () => {
 };
 
 export default Nav;
+*/

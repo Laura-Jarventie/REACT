@@ -4,9 +4,9 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <nav>
-      <div>copyrights</div>
-    </nav>
+    <span className="Footer">
+      <div>Copyrights: all copyrights are reserved by Laura Järventie</div>
+    </span>
   );
 };
 
