@@ -21,10 +21,13 @@ const Nav = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Etusivu</Link>
         </li>
         <li>
           <Link to="/Recepies">Recipes</Link>
+        </li>
+        <li>
+          <Link to="/RecepyAdd">Lisää resepti</Link>
         </li>
         <li>
           <Link to="/About">About</Link>
