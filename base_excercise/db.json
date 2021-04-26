@@ -1,55 +1,79 @@
 {
-    "recepies" : [
-        {
-            "id" : 1,
-            "name": "Hiivaleipä",
-            "recipeCategory": "Leivonnainen",
-            "image":"Hiivaleipä",
-            "recipeIngredient": [
-                "30-50 g rasva",
-                "1/2 L maito",
-                "50g hiiva",
-                "3 dl kaurahiutale",
-                "2tl suola",
-                "10dl Pirkka hiivaleipäjauho"
-              ],
-              "recipeInstructions": 
-            "sulata rasva ja sotke kaikki ainekset  sekaisin niin että taikina irtoaa sormista. Kohota kaksinkertaiseksi. Paista 200C asteessa 30min."
-        },
-        {
-            "id" : 2,
-            "name": "Britan Kakku",
-            "recipeCategory": "Leivonnainen",
-            "image":"cake",
-            "recipeIngredient": [
-                "125g margariini",
-                "1dl sokeri",
-                "2 keltuaista",
-                "1dl mailtoa",
-                "1,5dl vehnäjauho",
-                "2tl leivinjauhe",
-                "2 valkuaista",
-                "1,5dl sokeri",
-                "1tl vaniliinisokeri",
-                "hasslepähkinärouhe"
-              ],
-              "recipeInstructions":
-              "vaahdota margariini ja sokeri. Lisää keltuaiset vatkaten. Lisää maito ja jauhot vuortellen vaahtoon. Marenki: valkuaiset vatkataan kovaksi vaahdoksi. Lisää sokerit. Levitä pohja pellille - marenki päälle.Paista 175C astessaa 15-20min.Tekele halkaistaan, väliin hilloa, 2dl kermavaahtoa ja 3 banaania siivutettuna."
-        },
-        {
-            "id" : 3,
-            "name": "Vaniljaleivät",
-            "recipeCategory": "Keitto",
-            "image":"cookie",
-            "recipeIngredient": [
-                "200g margariini",
-                "200g sokeri",
-                "1 muna",
-                "300g vehnäjauhoja",
-                "2tl leivinjauhe",
-                "3tl vaniljasokeri"
-              ],
-              "recipeInstructions": "Vatkaa voi ja sokeri ja lisää munat. Sekoita jauhot keskenään ja sotke edellisten joukkoon. Leivotaan tanko joka levitettään haarukalla, päälle sokeria. Paisto 200C 8min. Paloitellaan kuumana. "
-        }
-    ]
+  "recepies": [
+    {
+      "id": 1,
+      "name": "Hiivaleipä",
+      "recipeCategory": "Leivonnainen",
+      "niceToKnow": "En tiedä mistä tämä on tullut...",
+      "recipeIngredient": [
+        "30-50 g rasva",
+        "1/2 L maito",
+        "50g hiiva",
+        "3 dl kaurahiutale",
+        "2tl suola",
+        "10dl Pirkka hiivaleipäjauho"
+      ],
+      "recipeInstructions": "sulata rasva ja sotke kaikki ainekset  sekaisin niin että taikina irtoaa sormista. Kohota kaksinkertaiseksi. Paista 200C asteessa 30min."
+    },
+    {
+      "id": 2,
+      "name": "Britan Kakku",
+      "recipeCategory": "Leivonnainen",
+      "niceToKnow": "Leenan vakkariherkku kakku kesällä",
+      "recipeIngredient": [
+        "125g margariini",
+        "1dl sokeri",
+        "2 keltuaista",
+        "1dl mailtoa",
+        "1,5dl vehnäjauho",
+        "2tl leivinjauhe",
+        "2 valkuaista",
+        "1,5dl sokeri",
+        "1tl vaniliinisokeri",
+        "hasslepähkinärouhe"
+      ],
+      "recipeInstructions": "vaahdota margariini ja sokeri. Lisää keltuaiset vatkaten. Lisää maito ja jauhot vuortellen vaahtoon. Marenki: valkuaiset vatkataan kovaksi vaahdoksi. Lisää sokerit. Levitä pohja pellille - marenki päälle.Paista 175C astessaa 15-20min.Tekele halkaistaan, väliin hilloa, 2dl kermavaahtoa ja 3 banaania siivutettuna."
+    },
+    {
+      "id": 3,
+      "name": "Vaniljaleivät",
+      "recipeCategory": "Leivonnainen",
+      "niceToKnow": "valmistus sekava, en saanut kuvasta selvää",
+      "recipeIngredient": [
+        "200g margariini",
+        "200g sokeri",
+        "1 muna",
+        "300g vehnäjauhoja",
+        "2tl leivinjauhe",
+        "3tl vaniljasokeri"
+      ],
+      "recipeInstructions": "Vatkaa voi ja sokeri ja lisää munat. Sekoita jauhot keskenään ja sotke edellisten joukkoon. Leivotaan tanko joka levitettään haarukalla, päälle sokeria. Paisto 200C 8min. Paloitellaan kuumana. "
+    },
+    {
+      "name": "sfs",
+      "recipeCategory": "",
+      "niceToKnow": "sdfs",
+      "recipeIngredient": "",
+      "recipeInstruction": "",
+      "link": "",
+      "searchInput": "",
+      "category": "sfsd",
+      "ingredients": "sf",
+      "text": "afd",
+      "id": 4
+    },
+    {
+      "name": "sfs",
+      "recipeCategory": "",
+      "niceToKnow": "sdfs",
+      "recipeIngredient": "",
+      "recipeInstruction": "",
+      "link": "",
+      "searchInput": "",
+      "category": "sfsd",
+      "ingredients": "sf",
+      "text": "afd",
+      "id": 5
+    }
+  ]
 }

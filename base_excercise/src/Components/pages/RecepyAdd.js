@@ -1,49 +1,51 @@
 import React from "react";
 
-const RecepyAdd = () => {
+const RecepyAdd = ({ change, submit }) => {
   return (
-    <div className="addRecipe">
-      <div className="card">
-        <h1>Lisää resepti:</h1>
-        <form method="post" enctype="multipart/form-data">
-          <label htmlFor="name">Reseptin nimi</label>
-          <br></br>
-          <input type="text" name="name" required></input>
-          <br></br>
+    <form onSubmit={submit}>
+      <label>Lisää resepti: </label>
+      <br></br>
+      <input type="text" name="name" onChange={change} required />
+      <br></br>
+      <label>Kategoria:</label>
+      <br></br>
+      <input type="text" name="category" onChange={change} required></input>
+      <br></br>
 
-          <label htmlFor="category">Kategoria</label>
-          <br></br>
-          <input type="text" name="description" required></input>
-          <br></br>
+      <label>Kenen luottoresepti:</label>
+      <br></br>
+      <input type="text" name="niceToKnow" onChange={change}></input>
+      <br></br>
 
-          <label htmlFor="ingredients">Ainekset, erota pilkulla</label>
-          <br></br>
-          <textarea
-            name="ingredients"
-            cols="30"
-            rows="20"
-            maxLength="500"
-            required
-          ></textarea>
-          <br></br>
+      <label>Ainekset, erota pilkulla</label>
+      <br></br>
+      <input
+        type="text"
+        name="ingredients"
+        cols="30"
+        rows="20"
+        maxLength="500"
+        onChange={change}
+        required
+      ></input>
+      <br></br>
 
-          <label htmlFor="instructions">Valmistus ohjeet</label>
-          <br></br>
+      <label>Valmistus ohjeet</label>
+      <br></br>
 
-          <br></br>
-          <textarea
-            name="text"
-            cols="30"
-            rows="20"
-            maxLength="3000"
-            required
-          ></textarea>
-          <br></br>
+      <br></br>
+      <textarea
+        name="text"
+        cols="30"
+        rows="20"
+        maxLength="3000"
+        onChange={change}
+        required
+      ></textarea>
+      <br></br>
 
-          <button type="submit">Lähetä</button>
-        </form>
-      </div>
-    </div>
+      <button type="submit">Lisää resepti</button>
+    </form>
   );
 };
 
