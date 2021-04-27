@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
+import RecepyCard from "./RecepyCard";
 import axios from "axios";
 
-import RecepyCard from "./RecepyCard";
-
-const RecepyList = () => {
+const RecepyList = ({ recepies }) => {
   const [recepty, setRecepty] = useState([]);
 
   useEffect(() => {
@@ -14,16 +13,17 @@ const RecepyList = () => {
 
   return (
     <div className="posts">
-      {recepty.map((r) => (
-        <RecepyCard
-          key={r.id}
-          name={r.name}
-          recipeCategory={r.recipeCategory}
-          niceToKnow={r.niceToKnow}
-          recipeIngredient={r.recipeIngredient}
-          recipeInstruction={r.recipeInstruction}
-        />
-      ))}
+      {recepies &&
+        recepies.map((r) => (
+          <RecepyCard
+            key={r.id}
+            name={r.name}
+            recipeCategory={r.recipeCategory}
+            niceToKnow={r.niceToKnow}
+            recipeIngredient={r.recipeIngredient}
+            recipeInstruction={r.recipeInstruction}
+          />
+        ))}
     </div>
   );
 };

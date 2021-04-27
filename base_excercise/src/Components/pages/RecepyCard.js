@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const RecepyCard = ({
   name,
@@ -6,14 +6,13 @@ const RecepyCard = ({
   niceToKnow,
   recipeIngredient,
   recipeInstruction,
-  link,
 }) => {
-  /*const truncate = (str, no_words) => {
-    return str.split(" ").splice(0, no_words).join(" ");
-  };*/
+  const truncate = (str, no_words) => {
+    return str.split("").splice(0, no_words).join("");
+  };
 
   return (
-    <div className="post">
+    <div className="card">
       <div>
         <h2>{name}</h2>
         <h4>{recipeCategory}</h4>
@@ -25,9 +24,7 @@ const RecepyCard = ({
         </ul>
         <h4>Valmistus:</h4>
         <p>{recipeInstruction}</p>
-        {/* {*<p>{truncate(recipeInstruction, 2)} ...</p>*} */}
-
-        <a href={link}>Lue koko resepti</a>
+        <p>{truncate(recipeInstruction, 2)} ...</p>
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import RecepyAdd from "./RecepyAdd";
 import RecepyList from "./RecepyList";
 import axios from "axios";
 
 const Recepies = () => {
+  const [recepty, setRecepty] = useState([]);
   const [newRecepy, setNewRecepy] = useState({
     name: "",
     recipeCategory: "",
@@ -13,6 +14,12 @@ const Recepies = () => {
     link: "",
     searchInput: "",
   });
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/recepies")
+      .then((res) => setRecepty(res.data));
+  }, []);
 
   /*SearchBox = (props) => {
     return (
@@ -33,7 +40,13 @@ const Recepies = () => {
 
   const submitRecepy = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3001/recepies", newRecepy);
+    axios
+      .post("http://localhost:3001/recepies", newRecepy)
+      .then(() => {
+        return axios.get("http://localhost:3001/recepies");
+      })
+      .then((res) => setRecepty(res.data));
+    e.target.reset();
   };
 
   /*SearchSelector = (props) => {
@@ -89,7 +102,7 @@ const Recepies = () => {
 
   return (
     <main>
-      <RecepyList />
+      <RecepyList recepty={recepty} />
       <RecepyAdd change={valueChangeHandler} submit={submitRecepy} />
     </main>
   );
