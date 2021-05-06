@@ -24,13 +24,13 @@ const Nav = () => {
           <Link to="/">Etusivu</Link>
         </li>
         <li>
-          <Link to="/Recepies">Recipes</Link>
+          <Link to="/recepies">Reseptit</Link>
         </li>
         <li>
-          <Link to="/RecepyAdd">Lisää resepti</Link>
+          <Link to="/MargitinRecipeForm">Lisää resepti</Link>
         </li>
         <li>
-          <Link to="/About">About</Link>
+          <Link to="/about">About</Link>
         </li>
       </ul>
     </nav>
