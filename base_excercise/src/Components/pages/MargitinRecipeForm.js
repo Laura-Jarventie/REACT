@@ -4,11 +4,12 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Dropdown from "react-bootstrap/Dropdown";
 
 const MargitinRecipeForm = () => {
   const [data, setData] = useState({
     name: "",
-    recipeCategory: "",
+    recipeCategory: "Sekalaiset",
     niceToKnow: "",
     recipeIngredient: [],
     recipeInstructions: "",
@@ -35,7 +36,12 @@ const MargitinRecipeForm = () => {
   };
 
   const submitData = (e) => {
-    axios.post("http://localhost:3001/recepies", data);
+    e.preventDefault();
+    axios.post(
+      "https://limitless-citadel-22858.herokuapp.com/recipes/add",
+      data
+    );
+    e.target.reset();
   };
 
   return (
@@ -45,13 +51,22 @@ const MargitinRecipeForm = () => {
         <Form.Control type="text" name="name" onChange={changeData} />
       </Form.Group>
 
-      <Form.Group>
-        <Form.Label htmlFor="">Kategoria:</Form.Label>
-        <Form.Control type="text" name="recipeCategory" onChange={changeData} />
-      </Form.Group>
+      <label>Kategoria </label>
+      <select
+        name="recipeCategory"
+        name="recipeCategory"
+        onChange={changeData}
+        required
+      >
+        <option value="noValue">valitse:</option>
+        <option value="Ruokia">Ruokia</option>
+        <option value="Leivonnainen">Leivonnainen</option>
+        <option value="Suolaiset">Suolaiset</option>
+        <option value="Sekalaiset">Sekalaiset</option>
+      </select>
 
       <Form.Group>
-        <Form.Label htmlFor="">Kenen luottoresepti:</Form.Label>
+        <Form.Label htmlFor="">Kenen resepti yms:</Form.Label>
         <Form.Control type="text" name="niceToKnow" onChange={changeData} />
       </Form.Group>
 
@@ -71,7 +86,7 @@ const MargitinRecipeForm = () => {
           </Form.Group>
         );
       })}
-      <Button variant="outline-success" onClick={addMore}>
+      <Button variant="info" onClick={addMore}>
         Lisää aines
       </Button>
       <Form.Group>
@@ -85,7 +100,7 @@ const MargitinRecipeForm = () => {
         />
       </Form.Group>
 
-      <Button type="submit" variant="success" value="Send data">
+      <Button type="submit" variant="info" value="Send data">
         Lisää resepti
       </Button>
     </Form>

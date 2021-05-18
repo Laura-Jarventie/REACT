@@ -1,4 +1,7 @@
 .Footer {
   font-family: "Dancing Script", cursive;
-  padding-left: 1vh;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin-bottom: 0.5rem;
 }

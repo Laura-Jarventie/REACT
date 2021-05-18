@@ -1,11 +1,16 @@
 body {
-  background-color: blanchedalmond;
+  background-color: rgba(248, 237, 222, 0.986);
   margin: 0 auto;
 }
 
 .App-Header {
   display: flex;
-  height: 15vh;
+  height: 10vh;
   background-color: rgb(180, 182, 182);
   text-align: center;
+}
+
+button {
+  padding: 1rem;
+  margin-top: 1rem;
 }

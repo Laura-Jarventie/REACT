@@ -1,15 +1,24 @@
 import React, { useState, useEffect } from "react";
 import SearchBox from "./Searchbox";
 import RecepyList from "./RecepyList";
+import RecepySingle from "./RecepySingle";
+import { useRouteMatch, Route, Switch } from "react-router";
 import axios from "axios";
 
 const Recepypage = () => {
   const [recepies, setRecepty] = useState([]);
   const [searchInput, setSearchInput] = useState("");
+  let match = useRouteMatch();
+  const recipeFilter = recepies.filter((recipe) => {
+    return (
+      recipe.name.toLowerCase().includes(searchInput.toLowerCase()) ||
+      recipe.recipeCategory.toLowerCase().includes(searchInput.toLowerCase())
+    );
+  });
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/recepies")
+      .get("https://limitless-citadel-22858.herokuapp.com/recipes/all")
       .then((res) => setRecepty(res.data));
   }, []);
 
@@ -18,18 +27,20 @@ const Recepypage = () => {
     console.log(searchInput);
   };
 
-  const recipeFilter = recepies.filter((recipe) => {
-    return (
-      recipe.name.toLowerCase().includes(searchInput.toLowerCase()) ||
-      recipe.recipeCategory.toLowerCase().includes(searchInput.toLowerCase())
-    );
-  });
-
   return (
-    <main>
-      <SearchBox search={searchValueHandler} />
-      <RecepyList recepies={recipeFilter} />
-    </main>
+    <div>
+      <main>
+        <SearchBox search={searchValueHandler} />
+      </main>
+      <Switch>
+        <Route path={`${match.path}/:id`}>
+          <RecepySingle />
+        </Route>
+        <Route path={match.path}>
+          <RecepyList recepies={recipeFilter} />
+        </Route>
+      </Switch>
+    </div>
   );
 };
 

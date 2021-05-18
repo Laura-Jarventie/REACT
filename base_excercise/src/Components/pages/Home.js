@@ -1,8 +1,10 @@
 import React from "react";
+import Taata from "../img/Taata.jpg";
 
 const Home = () => {
   return (
     <span>
+      <img src={Taata} alt="picture of granpa" />
       <h1>Tervetuloa selaamaan Järventie-suvun luottoreseptejä:</h1>
 
       <p> Järventeiden suvussa on kulkenut useita reseptejä kädestä </p>

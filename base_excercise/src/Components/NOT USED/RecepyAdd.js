@@ -187,3 +187,58 @@ const RecipeForm = () => {
 
 export default RecipeForm;
 */
+<Form.Control
+  type="text"
+  name="recipeCategory"
+  onChange={changeData}
+  option
+  value="Ruokia/Leivonnainen/Suolaiset/Sekalaiset"
+/>;
+<>
+        <Dropdown>
+          <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+            Etsi kategorialla
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1">Ruokia</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Leivonnainen</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Suolaiset</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Sekalaiset</Dropdown.Item>
+            <input className="searchBox" onChange={search}></input>
+          </Dropdown.Menu>
+        </Dropdown>
+      </>
+    </>
+
+    <>
+        <Dropdown>
+          <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+            Etsi kategorialla
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1">Ruokia</Dropdown.Item>
+            <Dropdown.Item href="#/action-2">Leivonnainen</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Suolaiset</Dropdown.Item>
+            <Dropdown.Item href="#/action-3">Sekalaiset</Dropdown.Item>
+            <input className="searchBox" onChange={search}></input>
+          </Dropdown.Menu>
+        </Dropdown>
+      </>
+
+<label for="exampleDataList" class="form-label">
+Kategoria
+</label>
+<input
+class="form-control"
+list="datalistOptions"
+id="exampleDataList"
+placeholder="Valitse kategoria..."
+/>
+<datalist id="datalistOptions">
+<option value="Ruokia" />
+<option value="Leivonnainen" />
+<option value="Suolaiset" />
+<option value="Sekalaiset" />
+</datalist>

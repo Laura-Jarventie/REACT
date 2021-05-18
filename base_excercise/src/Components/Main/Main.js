@@ -12,7 +12,7 @@ const Main = () => {
     <main>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/recepies" component={Recepypage} />
+        <Route path="/recipes" component={Recepypage} />
         <Route path="/MargitinRecipeForm" component={MargitinRecipeForm} />
         <Route path="/about" component={About} />
       </Switch>

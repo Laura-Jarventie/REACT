@@ -4,14 +4,9 @@ main {
   line-height: 1.5;
   padding: 4vh;
   font-family: "Dancing Script", cursive;
-}
-
-.receptycard {
-  background-color: rgba(245, 245, 245, 0.719);
-  border-radius: 5px;
-  box-shadow: 0 0 5px #333;
-  padding: 2vh;
-  margin-bottom: 3vh;
+  text-align: center;
+  padding-left: 20vh;
+  padding-right: 20vh;
 }
 
 .searchBox {
@@ -20,4 +15,44 @@ main {
   padding: 0.5vh;
   display: inline-block;
   margin-bottom: 2vh;
+}
+
+.card {
+  margin: 20px;
+  display: inline-block;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: x-large;
+}
+.card-subtitle,
+.card.text {
+  font-weight: 800;
+  font-size: medium;
+  color: black;
+}
+
+.recepyCard {
+  border-radius: 2px;
+  box-shadow: 0 0 5px #aeaeae;
+  height: 150px;
+}
+
+.linkText {
+  font-size: large;
+}
+
+.singleCard {
+  border-radius: 2px;
+  box-shadow: 0 0 5px #aeaeae;
+}
+
+.Form.Label htmlFor {
+  font-size: xx-large;
+}
+
+img {
+  height: 800px;
+  width: 619px;
 }

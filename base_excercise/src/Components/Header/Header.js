@@ -24,7 +24,7 @@ const Nav = () => {
           <Link to="/">Etusivu</Link>
         </li>
         <li>
-          <Link to="/recepies">Reseptit</Link>
+          <Link to="/recipes">Reseptit</Link>
         </li>
         <li>
           <Link to="/MargitinRecipeForm">Lisää resepti</Link>

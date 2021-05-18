@@ -4,112 +4,116 @@
       "id": 1,
       "name": "Hiivaleipä",
       "recipeCategory": "Leivonnainen",
-      "niceToKnow": "En tiedä mistä tämä on tullut...",
+      "niceToKnow": "Taatan resepti",
       "recipeIngredient": [
         {
+          "id": 1,
           "recipeIngredient": "30-50 g rasva"
         },
         {
+          "id": 2,
           "recipeIngredient": "1/2 L maito"
         },
         {
+          "id": 3,
           "recipeIngredient": "50g hiiva"
         },
         {
+          "id": 4,
           "recipeIngredient": "3dl kaurahiutale"
         },
         {
+          "id": 5,
           "recipeIngredient": "2tl suola"
         },
         {
+          "id": 6,
           "recipeIngredient": "10dl Pirkka hiivaleipäjauho"
         }
       ],
-      "recipeInstructions": "sulata rasva ja sotke kaikki ainekset  sekaisin niin että taikina irtoaa sormista. Kohota kaksinkertaiseksi. Paista 200C asteessa 30min."
+      "recipeInstructions": "sulata rasva ja sekoita kaikki ainekset, niin että taikina irtoaa sormista. Kohota kaksinkertaiseksi. Paista 200C asteessa 30min."
     },
     {
       "id": 2,
       "name": "Britan Kakku",
       "recipeCategory": "Leivonnainen",
-      "niceToKnow": "Leenan vakkariherkku kakku kesällä",
+      "niceToKnow": "Leenan vakkarikakku juhliin (2.3.1995)",
       "recipeIngredient": [
         {
+          "id": 1,
           "recipeIngredient": "125g margariini"
         },
         {
+          "id": 2,
           "recipeIngredient": "1dl sokeri"
         },
         {
+          "id": 3,
           "recipeIngredient": "2 keltuaista"
         },
         {
+          "id": 4,
           "recipeIngredient": "1dl maitoa"
         },
         {
+          "id": 5,
           "recipeIngredient": "1,5dl vehnäjauho"
         },
         {
+          "id": 6,
           "recipeIngredient": "2tl leivinjauhe"
         },
         {
+          "id": 7,
           "recipeIngredient": "2 valkuaista"
         },
         {
+          "id": 8,
           "recipeIngredient": "1,5dl sokeria"
         },
         {
+          "id": 9,
           "recipeIngredient": "1tl vaniliinisokeri"
         },
         {
+          "id": 10,
           "recipeIngredient": "hasselpähkinärouhe"
         }
       ],
-      "recipeInstructions": "vaahdota margariini ja sokeri. Lisää keltuaiset vatkaten. Lisää maito ja jauhot vuortellen vaahtoon. Marenki: valkuaiset vatkataan kovaksi vaahdoksi. Lisää sokerit. Levitä pohja pellille - marenki päälle.Paista 175C astessaa 15-20min.Tekele halkaistaan, väliin hilloa, 2dl kermavaahtoa ja 3 banaania siivutettuna."
+      "recipeInstructions": "Vaahdota voi ja sokeri, lisää keltuaiset vatkaten. Lisää maito ja jauhot vuorotellen. Marenki: valkuaiset vatkataan kovaksi vaahdoksi. Lisää sokerit. Paista 175C 15-20min. Halkaise pohja, väliin hilloa, kermavaahtoa ja banaania siivutettuna, päälle rouhe."
     },
     {
       "id": 3,
       "name": "Vaniljaleivät",
-      "recipeCategory": "Pääruoka",
-      "niceToKnow": "valmistus sekava, en saanut kuvasta selvää",
+      "recipeCategory": "Leivonnainen",
+      "niceToKnow": "Taata (10.10.1988)",
       "recipeIngredient": [
         {
+          "id": 1,
           "recipeIngredient": "200g margariini"
         },
         {
+          "id": 2,
           "recipeIngredient": "200g sokeri"
         },
         {
+          "id": 3,
           "recipeIngredient": "1 kananmuna"
         },
         {
+          "id": 4,
           "recipeIngredient": "300g vehnäjauho"
         },
         {
+          "id": 5,
           "recipeIngredient": "2tl leivinjauhe"
         },
         {
+          "id": 6,
           "recipeIngredient": "3tl vaniliinisokeri"
         }
       ],
-      "recipeInstructions": "Vatkaa voi ja sokeri ja lisää munat. Sekoita jauhot keskenään ja sotke edellisten joukkoon. Leivotaan tanko joka levitettään haarukalla, päälle sokeria. Paisto 200C 8min. Paloitellaan kuumana. "
-    },
-    {
-      "name": "Toskakakku",
-      "recipeCategory": "leivonnainen",
-      "niceToKnow": "Taata",
-      "recipeIngredient": [
-        {
-          "recipeIngredient": "1dl mantelilastuja"
-        },
-        {
-          "recipeIngredient": "2dl vettä"
-        },
-        {
-          "recipeIngredient": "2dl jauhoa"
-        }
-      ],
-      "recipeInstructions": "paista",
-      "id": 4
+      "recipeInstructions": "Vatkaa voi ja sokeri ja lisää muna. Sekoita jauhot keskenään ja sotke edellisten joukkoon. Leivotaan tanko halkaisijaltaan noin 1cm joka levitettään haarukalla ja voidellaan munalle, päälle sokeria. Paista 200C noin 8min. Paloitellaan kuumana. "
     }
   ]
 }
