@@ -3,28 +3,12 @@ import React from "react";
 const About = () => {
   return (
     <span>
-      <h1>This page was build by Laura in HBC</h1>
+      <h1 className="about">This page was build by me, Laura Järventie.</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
-        veritatis, voluptas voluptatum consequuntur quod natus adipisci magni
-        explicabo quibusdam laboriosam tempore quia aliquid! Perferendis error,
-        tenetur harum saepe sint Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Numquam facilis laudantium sed, quasi ratione
-        excepturi vel mollitia unde velit nisi ad, modi dolorum cupiditate vitae
-        error? Recusandae, nobis! Ducimus, maxime. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Necessitatibus veritatis, voluptas
-        voluptatum consequuntur quod natus adipisci magni explicabo quibusdam
-        laboriosam tempore quia aliquid! Perferendis error, tenetur harum saepe
-        sint Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
-        facilis laudantium sed, quasi ratione excepturi vel mollitia unde velit
-        nisi ad, modi dolorum cupiditate vitae error? Recusandae, nobis!
-        Ducimus, maxime. Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Necessitatibus veritatis, voluptas voluptatum consequuntur quod
-        natus adipisci magni explicabo quibusdam laboriosam tempore quia
-        aliquid! Perferendis error, tenetur harum saepe sint Lorem ipsum dolor
-        sit amet consectetur, adipisicing elit. Numquam facilis laudantium sed,
-        quasi ratione excepturi vel mollitia unde velit nisi ad, modi dolorum
-        cupiditate vitae error? Recusandae, nobis! Ducimus, maxime.
+        I study in Helsinki Business College to became as fullstack web
+        developer. This page is school project for my React course. I have used
+        React.js and React.bootstrap library to build the front end. For the
+        back end I used PhpStorm and database is saved in Heroku.
       </p>
     </span>
   );

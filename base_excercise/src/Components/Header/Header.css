@@ -5,6 +5,7 @@
   display: flex;
   text-align: center;
   margin-top: vh;
+  color: white;
 }
 
 ul li {
@@ -25,4 +26,12 @@ ul li {
   text-align: center;
   font-family: "Dancing Script", cursive;
   padding-left: 1vh;
+  background-color: #212529;
+}
+
+.text-white {
+  color: rgb(155, 31, 31);
+}
+h2 {
+  color: white;
 }

@@ -5,9 +5,8 @@ body {
 
 .App-Header {
   display: flex;
-  height: 10vh;
-  background-color: rgb(180, 182, 182);
-  text-align: center;
+  height: 8vh;
+  background-color: #212529;
 }
 
 button {

@@ -4,7 +4,6 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Dropdown from "react-bootstrap/Dropdown";
 
 const MargitinRecipeForm = () => {
   const [data, setData] = useState({
@@ -48,28 +47,33 @@ const MargitinRecipeForm = () => {
     <Form onSubmit={submitData}>
       <Form.Group>
         <Form.Label htmlFor="">Reseptin nimi:</Form.Label>
-        <Form.Control type="text" name="name" onChange={changeData} />
+        <Form.Control
+          type="text"
+          width="10px"
+          name="name"
+          onChange={changeData}
+        />
       </Form.Group>
-
-      <label>Kategoria </label>
+      <br></br>
       <select
         name="recipeCategory"
         name="recipeCategory"
         onChange={changeData}
         required
       >
-        <option value="noValue">valitse:</option>
+        <option value="noValue">Valitse Kategoria:</option>
         <option value="Ruokia">Ruokia</option>
         <option value="Leivonnainen">Leivonnainen</option>
         <option value="Suolaiset">Suolaiset</option>
         <option value="Sekalaiset">Sekalaiset</option>
       </select>
-
+      <div>
+        <h1> </h1>
+      </div>
       <Form.Group>
-        <Form.Label htmlFor="">Kenen resepti yms:</Form.Label>
+        <Form.Label htmlFor="">Kenen resepti tai päivämäärä:</Form.Label>
         <Form.Control type="text" name="niceToKnow" onChange={changeData} />
       </Form.Group>
-
       {ingredients.map((_, i) => {
         return (
           <Form.Group>
@@ -86,9 +90,12 @@ const MargitinRecipeForm = () => {
           </Form.Group>
         );
       })}
-      <Button variant="info" onClick={addMore}>
+      <Button variant="secondary" size="m" onClick={addMore}>
         Lisää aines
       </Button>
+      <div>
+        <h1> </h1>
+      </div>
       <Form.Group>
         <Form.Label htmlFor="">Valmistus ohjeet:</Form.Label>
         <Form.Control
@@ -100,7 +107,7 @@ const MargitinRecipeForm = () => {
         />
       </Form.Group>
 
-      <Button type="submit" variant="info" value="Send data">
+      <Button type="submit" variant="secondary" size="m" value="Send data">
         Lisää resepti
       </Button>
     </Form>

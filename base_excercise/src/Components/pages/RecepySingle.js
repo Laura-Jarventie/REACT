@@ -26,7 +26,7 @@ const RecepySingle = () => {
 
   if (recepy) {
     recepyData = (
-      <Card style={{ width: "25rem", height: "70vh" }} className="singleCard">
+      <Card style={{ width: "25rem", height: "100vh" }} className="singleCard">
         <Card.Body>
           <>
             <div key={recepy.id}></div>

@@ -1,20 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Sacramento&display=swap");
+
 main {
   text-decoration: none;
   line-height: 1.5;
-  padding: 4vh;
+  padding: 2vh;
   font-family: "Dancing Script", cursive;
+
   text-align: center;
   padding-left: 20vh;
   padding-right: 20vh;
+  font-size: large;
 }
 
 .searchBox {
+  border-radius: 5px;
+  padding: 0.5vh;
+  display: inline-block;
+  margin-bottom: 2vh;
+  border-style: inherit;
+  box-shadow: 0 0 5px #aeaeae;
+}
+
+.secondSearhBox {
   background-color: rgba(245, 245, 245, 0.719);
   border-radius: 5px;
   padding: 0.5vh;
   display: inline-block;
   margin-bottom: 2vh;
+  width: 20px;
 }
 
 .card {
@@ -36,7 +49,7 @@ main {
 .recepyCard {
   border-radius: 2px;
   box-shadow: 0 0 5px #aeaeae;
-  height: 150px;
+  height: 180px;
 }
 
 .linkText {
@@ -46,13 +59,20 @@ main {
 .singleCard {
   border-radius: 2px;
   box-shadow: 0 0 5px #aeaeae;
+  height: 800px;
 }
 
 .Form.Label htmlFor {
   font-size: xx-large;
 }
 
-img {
-  height: 800px;
-  width: 619px;
+.Footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: 100px;
+}
+
+.about {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }

@@ -5,7 +5,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <span className="Footer">
-      <h4>Copyrights: all copyrights are reserved by Laura Järventie</h4>
+      <h4>© 2021 Laura Järventie All Rights Reserved</h4>
     </span>
   );
 };

@@ -1,7 +1,5 @@
 import React from "react";
 
-import Dropdown from "react-bootstrap/Dropdown";
-
 const SearchBox = ({ search }) => {
   return (
     <>
@@ -13,21 +11,22 @@ const SearchBox = ({ search }) => {
           onChange={search}
           placeholder="Etsi reseptin nimellä"
         ></input>
-      </div>
 
-      <input
-        class="form-control"
-        list="datalistOptions"
-        id="exampleDataList"
-        placeholder="Etsi kategorialla..."
-        onChange={search}
-      />
-      <datalist id="datalistOptions">
-        <option value="Ruokia" />
-        <option value="Leivonnainen" />
-        <option value="Suolaiset" />
-        <option value="Sekalaiset" />
-      </datalist>
+        <input
+          className="secondSearchBox"
+          class="form-control"
+          list="datalistOptions"
+          id="exampleDataList"
+          placeholder="Etsi kategorialla..."
+          onChange={search}
+        />
+        <datalist id="datalistOptions">
+          <option value="Ruokia" />
+          <option value="Leivonnainen" />
+          <option value="Suolaiset" />
+          <option value="Sekalaiset" />
+        </datalist>
+      </div>
     </>
   );
 };
