@@ -16,5 +16,5 @@ his is a study project made using React.js. For visual side I've used React Boot
 - Search from recipes
 - Add new recipes
 
-### `Live-link: https://60a647e3e5ab8113029c9a3a--laura-jarventie-recipeapp.netlify.app/`
+### `Live-link: (https://60a647e3e5ab8113029c9a3a--laura-jarventie-recipeapp.netlify.app/)`
 
