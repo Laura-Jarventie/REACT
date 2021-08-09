@@ -1,37 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
-.Logo {
-  font-size: 1.5rem;
-  display: flex;
-  text-align: center;
-  margin-top: vh;
-  color: white;
-}
-
-ul li {
-  display: inline-block;
-  padding: 0 0.5rem;
-
-  list-style-type: none;
-}
-
-.Nav {
+.nav {
   justify-content: space-between;
   align-items: center;
   font-size: x-large;
-  color: whitesmoke;
 }
 
 .container {
   text-align: center;
   font-family: "Dancing Script", cursive;
-  padding-left: 1vh;
   background-color: #212529;
 }
 
-.text-white {
-  color: rgb(155, 31, 31);
-}
 h2 {
   color: white;
 }

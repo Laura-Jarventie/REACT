@@ -8,8 +8,8 @@ const Home = () => {
         <img
           src={Taata}
           alt="picture of granpa"
-          height="800px"
-          width="619px"
+          height="560px"
+          width="433px"
         ></img>
       </div>
       <h1>Tervetuloa selaamaan Järventeiden luottoreseptejä</h1>
@@ -19,7 +19,7 @@ const Home = () => {
           kiertävät kädestä käteen ja niitä tehdään vuodesta toiseen, näin on
           myös meillä. Meidän suvun ehdottomasti ahkerin leipuri on ollut jo
           edesmennyt isoisäni eli taata. Muistan vieläkin elävästi kuinka
-          pikkutyttönä kävimme kalassa taatan, isäni ja veljeni kanssa. Illalla
+          pikkutyttönä kävimme kalassa taatan, isän ja veljen kanssa. Illalla
           ahvenet savustettiin ja syötiin heti lämpiminä suoraan
           savustuspöntöstä. Jälkiruuaksi oli höpöjä eli taatan leipomia
           korvapuusteja. Tätini Leena muistelee että taatan leivontavillitys

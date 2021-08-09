@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Nav, Navbar } from "react-bootstrap";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import Container from "react-bootstrap/Container";
@@ -25,28 +25,26 @@ const Header = () => {
 
 const Navigate = () => {
   return (
-    <div>
-      <Navbar>
-        <NavbarCollapse>
-          <Nav className="nav">
-            <Nav.Link className="text-light bg-dark" href="/">
-              Etusivu
-            </Nav.Link>
-            <Nav.Link className="text-light bg-dark" href="/recipes">
-              Reseptit
-            </Nav.Link>
+    <Navbar>
+      <NavbarCollapse>
+        <Nav className="nav">
+          <NavLink className="text-light bg-dark" to="/" exact>
+            Etusivu--
+          </NavLink>
+          <NavLink className="text-light bg-dark" to="/recipes">
+            Reseptit--
+          </NavLink>
 
-            <Nav.Link className="text-light bg-dark" href="/MargitinRecipeForm">
-              Lisää resepti
-            </Nav.Link>
+          <NavLink className="text-light bg-dark" to="/MargitinRecipeForm">
+            Lisää resepti--
+          </NavLink>
 
-            <Nav.Link className="text-light bg-dark" href="/about">
-              About
-            </Nav.Link>
-          </Nav>
-        </NavbarCollapse>
-      </Navbar>
-    </div>
+          <NavLink className="text-light bg-dark" to="/about">
+            About
+          </NavLink>
+        </Nav>
+      </NavbarCollapse>
+    </Navbar>
   );
 };
 
