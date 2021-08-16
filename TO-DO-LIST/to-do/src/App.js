@@ -43,25 +43,3 @@ function App(props) {
 }
 
 export default App;
-
-/* 
-  const addLikes = () => {
-    console.log("wow");
-  };
-  handleChange(e){
-    this.setState({ value: e.target.value });
-  };
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Notes to myself</h1>
-        <p>I have currently</p>
-      </header>
-      <div className="tasks">
-        <input type="text" name="task" onChange={this.handleChange} />
-        <input type="submit" value="Add task" />
-        <button onClick={addLikes}> Like </button>
-      </div>
-    </div>
-  );
-   */
