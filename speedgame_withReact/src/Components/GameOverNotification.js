@@ -7,7 +7,7 @@ const closeHandler = () => {
 
 const message = (score) => {
   if (score < 40) {
-    return "Are you drunk?";
+    return "What happened, were you not ready?";
   } else if (score < 80) {
     return "Oh, come on. Try at least";
   } else if (score < 150) {
